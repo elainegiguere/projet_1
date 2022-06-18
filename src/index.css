@@ -1,13 +1,49 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+/* font-family: 'Inter', sans-serif; */
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+:root{
+  /* #### Dark Theme */
+
+  --VeryDark: hsl(230, 17%, 14%);
+  --Dark: hsl(232, 19%, 15%);
+  --CardBlue:  hsl(228, 28%, 20%);
+  --TextBlue: hsl(228, 34%, 66%);
+  /* #### light Theme */
+  --LightBlue: hsl(225, 100%, 98%);
+  --CardBlue: hsl(227, 47%, 96%);
+  --TextBlue: hsl(228, 12%, 44%);
+  --TextDark: hsl(230, 17%, 14%);
+
+  --font:'Overpass', sans-serif;
+  }
+  
+  *{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  
+  html{
+    font-size: 1rem;
+  
+  }
+  
+  body{
+    font-size: 1.6rem;
+    font-family: var(--font);
+    display: grid;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: var(--LightBlue);
+  
+  }
+  
+  .container{
+    max-width: 400px;
+    min-width: min(350px, 100%);
+    margin: auto;
+    border-radius:10px;
+    background-color: var(--CardBlue);
+  
+  }
