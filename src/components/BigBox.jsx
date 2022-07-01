@@ -22,7 +22,7 @@ const BigBox = ({dayMode, border, icon, user, number, days, arrow}) => {
             <section className={classNames} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} mode={dayMode} border={""}>
                 <div className='row-flex'>
                  <SocialIcon src={icon} alt={icon}></SocialIcon>
-                 <Text as={"p"}>{user}</Text>
+                 <Text as={"h5"}>{user}</Text>
                 </div>
 
                 <div className='row'>

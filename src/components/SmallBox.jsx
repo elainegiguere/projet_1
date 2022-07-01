@@ -7,7 +7,7 @@ import Arrow from "./Arrow";
 
 
 
-const SmallBox = ({arrow, icon, user, number, days}) => {
+const SmallBox = ({arrow, icon, user, number, days, red}) => {
 
     const [isHovered, setIsHovered]= useState(false);
     const onMouseEnter = () => setIsHovered (true);
@@ -23,15 +23,15 @@ const SmallBox = ({arrow, icon, user, number, days}) => {
             
             <section className={classNames} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
                 <div className='row-flex'>
-                <Text as={"p"}>{user}</Text>
+                <Text as={"h6"}>{user}</Text>
                  <SocialIcon src={icon} alt="facebook"></SocialIcon>
                 </div>
 
                 <div className='row-flex'>
                 <Text as={"h"}>{number}</Text>
-                <span className= 'percentage'>
+                <span className='percentage'>
                 <Arrow src={arrow} alt={arrow}></Arrow>
-                <Text as={"p"}>{days}</Text>
+                <Text as={"p"}red={red}>{days}</Text>
                 </span>
                 </div>
             </section>

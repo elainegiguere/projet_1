@@ -107,6 +107,9 @@
   letter-spacing: 3px;
   text-align: center;
 }
+.h5{
+  font-size: 0.8rem;
+}
 .bigBox p{
   font-size: 0.9rem;
   text-align: center;
@@ -132,9 +135,16 @@ img.arrow {
 span.percentage {
   display: inline-flex;
   align-content: center;
-align-items: center;
-padding-left: 1px;
-margin-left: auto;
+  align-items: center;
+  padding-left: 1px;
+  margin-left: auto;
 }
 
+p.text-red{
+  color: red;
+}
+
+p.text-green{
+  color: green;
+}
 
