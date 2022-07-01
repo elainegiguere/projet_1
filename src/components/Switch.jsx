@@ -1,9 +1,10 @@
 import React from 'react'
 
-const Switch = ({placement}) => {
-    const placementClassname = placement === "left" ? "left" : "right";
-  return (
-    <div>Switch</div>
+
+const Switch = ({children, onClick}) => {
+      
+    return (
+    <div className='switch' onClick={onClick}>{children}</div>
   )
 }
 

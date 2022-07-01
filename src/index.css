@@ -10,7 +10,8 @@
   --TextBlue: hsl(228, 34%, 66%);
   /* #### light Theme */
   --LightBlue: hsl(225, 100%, 98%);
-  --CardBlue: hsl(227, 47%, 96%);
+  --CardBlue: hsl(228, 19%, 79%);
+  --CardBlueHover: hsl(230, 20%, 66%);
   --TextBlue: hsl(228, 12%, 44%);
   --TextDark: hsl(230, 17%, 14%);
 
@@ -39,11 +40,101 @@
   
   }
   
-  .container{
-    max-width: 400px;
-    min-width: min(350px, 100%);
-    margin: auto;
-    border-radius:10px;
-    background-color: var(--CardBlue);
-  
-  }
+
+.switch{
+  display: flex;
+  justify-content: flex-end;
+  width:5%;
+  margin: 5px;
+  background: rgb(177, 176, 176);
+  position: absolute;
+  top: 10%;
+  right: 40px;
+  border: 0 solid #bbb;
+  border-radius: 20px;
+  transition: all 0.3s ease-in 0s;
+}
+
+.bigBox{
+  background-color: var(--CardBlue);
+  border-radius: 5px;
+  min-width: min(250px, 100%);
+  color: var(--TextDark);
+  margin: auto;
+}
+
+.smallBox{
+  background-color: var(--CardBlue);
+  border-radius: 5px;
+  min-width: min(250px, 100%);
+  color: var(--TextDark);
+  margin: auto;
+}
+
+.bg-dark{
+  background-color: var(--CardBlue);
+}
+
+.bg-darker{
+  background-color: var(--CardBlueHover);
+}
+.borderFb{
+  border-top: 5px solid rgb(65, 138, 234);
+}
+
+.borderIn{
+  border-top: 5px solid linear-gradient(102deg, rgba(236,83,0,1) 0%, rgba(249,213,27,1) 95%);
+}
+.borderYt{
+  border-top: 5px solid rgb(196, 2, 2);
+}
+.row-flex{
+  display:flex;
+  padding: 1%;
+  align-items: center;
+  justify-content: center;
+}
+
+.bigBox h2{
+  font-size: 5rem;
+  align-items: center;
+  padding-bottom: 2%;
+  text-align: center;
+}
+.h4{
+  font-size: 1rem;
+  text-transform:uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+}
+.bigBox p{
+  font-size: 0.9rem;
+  text-align: center;
+  padding:5%;
+}
+
+.lightMode{
+  background-color: rgb(255, 250, 250);
+  color: black;
+}
+
+.darkMode{
+  background-color: rgb(17, 17, 17);
+  color: white;
+}
+
+img.arrow {
+  height: 10px;
+  width: auto;
+  padding-right: 2px;
+}
+
+span.percentage {
+  display: inline-flex;
+  align-content: center;
+align-items: center;
+padding-left: 1px;
+margin-left: auto;
+}
+
+
